@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+
+	<head>
+		<meta charset="utf-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+		<!-- jQuery -->
+		<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+
+		<!-- Bootstrap -->
+		<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+		<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
+
+		<script src="client.js"></script>
+
+		<title>CloudCity - Client</title>
+	</head>
+
+	<body>
+
+		<div class="jumbotron text-center">
+			<div class="container">
+				<a href="/" class="h1">CloudCity</a>
+				<h3 class="text-muted">Crowd-sourced Distributed Cloud Service</h3>
+			</div>
+		</div>
+
+		<div class="container">
+
+			<div class="row">
+				<div class="col-sm-4"></div>
+				<div class="col-sm-4 text-center">
+					Running containers:
+					<ul class="list-group" id="running"></ul>
+				</div>
+				<div class="col-sm-4"></div>
+			</div>
+
+			<br><hr><br>
+
+			<form class="form-inline">
+				<label class="col-sm-3 control-label" for="container-picker">Choose container file:</label>
+				<div class="col-sm-1"></div>
+				<input type="file" class="form-control-file col-sm-4" id="container-picker" name="file">
+				<div class="col-sm-1"></div>
+				<button type="button" onclick="upload()" class="btn btn-dark col-sm-3">Upload container</button>
+			</form>
+
+			<br><hr><br>
+
+			<form class="form-inline">
+				<label class="col-sm-3 control-label" for="containers">Available containers:</label>
+				<div class="col-sm-1"></div>
+				<select class="form-control col-sm-4" id="containers"></select>
+				<div class="col-sm-1"></div>
+				<button type="button" onclick="launch()" class="btn btn-dark col-sm-3">Launch container</button>
+			</form>
+
+			<br><hr><br>
+
+			<form class="form">
+				<div class="form-row form-inline">
+					<label class="control-label col-sm-3" for="code">Type your code:</label>
+					<div class="col-sm-1"></div>
+					<label class="control-label col-sm-4 text-muted" for="code">Premium Users</label>
+					<div class="col-sm-1"></div>
+					<button type="submit" class="btn btn-dark col-sm-3">Create container</button>
+				</div>
+				<br>
+				<div class="form-row form-inline">
+					<textarea class="form-control col-sm-12" rows="8" id="code"></textarea>
+				</div>
+			</form>
+		</div>
+
+	</body>
+</html>

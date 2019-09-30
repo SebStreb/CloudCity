@@ -1,0 +1,20 @@
+{
+  "name": "cloudcity-client",
+  "version": "1.0.0",
+  "description": "Web client for CloudCity - a Crowd-sourced Distributed Cloud Computing Service",
+  "main": "index.js",
+  "scripts": {
+    "start": "node index.js"
+  },
+  "keywords": [
+    "Web",
+    "distributed",
+    "cloud"
+  ],
+  "author": "SebStreb",
+  "license": "ISC",
+  "dependencies": {
+    "cors": "^2.8.5",
+    "express": "^4.17.1"
+  }
+}
